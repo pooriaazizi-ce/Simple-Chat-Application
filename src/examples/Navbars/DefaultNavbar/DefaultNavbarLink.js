@@ -29,15 +29,15 @@ import MDTypography from "components/MDTypography";
 function DefaultNavbarLink({ icon, name, route, light }) {
   return (
     <MDBox
-      component={Link}
-      to={route}
-      mx={1}
-      p={1}
-      display="flex"
-      alignItems="center"
-      sx={{ cursor: "pointer", userSelect: "none" }}
+      // component={Link}
+      // to={route}
+      // mx={1}
+      // p={1}
+      // display="flex"
+      // alignItems="center"
+      // sx={{ cursor: "pointer", userSelect: "none" }}
     >
-      <Icon
+      {/* <Icon
         sx={{
           color: ({ palette: { white, secondary } }) => (light ? white.main : secondary.main),
           verticalAlign: "middle",
@@ -53,7 +53,7 @@ function DefaultNavbarLink({ icon, name, route, light }) {
         sx={{ width: "100%", lineHeight: 0 }}
       >
         &nbsp;{name}
-      </MDTypography>
+      </MDTypography> */}
     </MDBox>
   );
 }

@@ -13,6 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import { purple } from "@mui/material/colors";
+
 /**
  * The base colors for the Material Dashboard 2 React.
  * You can add new color using this file.
@@ -36,6 +38,11 @@ const colors = {
   white: {
     main: "#ffffff",
     focus: "#ffffff",
+  },
+
+  purple: {
+    main: "rgba(177, 14, 131)",
+    state: "rgba(177, 14, 131)",
   },
 
   black: {
@@ -100,6 +107,11 @@ const colors = {
     primary: {
       main: "#EC407A",
       state: "#D81B60",
+    },
+
+    purple: {
+      main: "rgba(177, 14, 131)",
+      state: "rgba(177, 14, 131)",
     },
 
     secondary: {
