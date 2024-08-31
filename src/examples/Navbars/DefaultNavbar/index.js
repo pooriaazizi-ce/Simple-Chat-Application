@@ -32,13 +32,14 @@ import MDButton from "components/MDButton";
 
 // Material Dashboard 2 React example components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
-import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
+// import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
 // Material Dashboard 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
 // Material Dashboard 2 React context
 import { useMaterialUIController } from "context";
+import { blue } from "@mui/material/colors";
 
 function DefaultNavbar({ transparent, light, action }) {
   const [controller] = useMaterialUIController();
@@ -50,30 +51,30 @@ function DefaultNavbar({ transparent, light, action }) {
   const openMobileNavbar = ({ currentTarget }) => setMobileNavbar(currentTarget.parentNode);
   const closeMobileNavbar = () => setMobileNavbar(false);
 
-  useEffect(() => {
-    // A function that sets the display state for the DefaultNavbarMobile.
-    function displayMobileNavbar() {
-      if (window.innerWidth < breakpoints.values.lg) {
-        setMobileView(true);
-        setMobileNavbar(false);
-      } else {
-        setMobileView(false);
-        setMobileNavbar(false);
-      }
-    }
+  // useEffect(() => {
+  //   // A function that sets the display state for the DefaultNavbarMobile.
+  //   function displayMobileNavbar() {
+  //     // if (window.innerWidth < breakpoints.values.lg) {
+  //     //   setMobileView(true);
+  //     //   setMobileNavbar(false);
+  //     // } else {
+  //     //   setMobileView(false);
+  //     //   setMobileNavbar(false);
+  //     // }
+  //   }
 
-    /** 
-     The event listener that's calling the displayMobileNavbar function when 
-     resizing the window.
-    */
-    window.addEventListener("resize", displayMobileNavbar);
+  //   /** 
+  //    The event listener that's calling the displayMobileNavbar function when 
+  //    resizing the window.
+  //   */
+  //   window.addEventListener("resize", displayMobileNavbar);
 
-    // Call the displayMobileNavbar function to set the state with the initial value.
-    displayMobileNavbar();
+  //   // Call the displayMobileNavbar function to set the state with the initial value.
+  //   displayMobileNavbar();
 
-    // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", displayMobileNavbar);
-  }, []);
+  //   // Remove event listener on cleanup
+  //   return () => window.removeEventListener("resize", displayMobileNavbar);
+  // }, []);
 
   return (
     <Container>
@@ -82,7 +83,7 @@ function DefaultNavbar({ transparent, light, action }) {
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
         my={3}
         mx={3}
-        width="calc(100% - 48px)"
+        width="calc(100% - 50px)"
         borderRadius="lg"
         shadow={transparent ? "none" : "md"}
         color={light ? "white" : "dark"}
@@ -164,13 +165,13 @@ function DefaultNavbar({ transparent, light, action }) {
           py={1.5}
           pl={1.5}
           color="inherit"
-          sx={{ cursor: "pointer" }}
+          // sx={{ cursor: "pointer" }}
           onClick={openMobileNavbar}
         >
-          <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
+          {/* <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon> */}
         </MDBox>
       </MDBox>
-      {mobileView && <DefaultNavbarMobile open={mobileNavbar} close={closeMobileNavbar} />}
+      {/* {mobileView && <DefaultNavbarMobile open={mobileNavbar} close={closeMobileNavbar} />} */}
     </Container>
   );
 }
