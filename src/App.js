@@ -47,13 +47,11 @@ import createCache from "@emotion/cache";
 import routes from "routes";
 
 // Material Dashboard 2 React contexts
-import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "context";
+import { useMaterialUIController, setMiniSidenav, setOpenConfigurator, setDirection } from "context";
 
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
-
-
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
@@ -102,8 +100,15 @@ export default function App() {
 
   // Setting the dir attribute for the body element
   useEffect(() => {
-    document.body.setAttribute("dir", direction);
-  }, [direction]);
+    document.body.setAttribute("dir", "rtl");
+  }, []);
+
+  // Changing the direction to rtl
+  useEffect(() => {
+    setDirection(dispatch, "rtl");
+
+    return () => setDirection(dispatch, "rtl");
+  }, []);
 
   // Setting page scroll to 0 when changing the route
   useEffect(() => {

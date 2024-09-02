@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // react-router-dom components
 import { Link } from "react-router-dom";
 
@@ -27,7 +12,7 @@ import MDButton from "components/MDButton";
 // Authentication layout components
 import CoverLayout from "layouts/authentication/components/CoverLayout";
 import { GiTreeBranch } from "react-icons/gi";
-import './NavBar.css';
+import "./NavBar.css";
 
 // Images
 import bgImage from "assets/images/bg-sign-up-cover.jpeg";
