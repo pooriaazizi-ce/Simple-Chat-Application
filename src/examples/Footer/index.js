@@ -12,7 +12,7 @@ import MDTypography from "components/MDTypography";
 // Material Dashboard 2 React base styles
 import typography from "assets/theme/base/typography";
 
-function Footer({ company, links }) {
+function Footer2({ company, links }) {
   const { href, name } = company;
   const { size } = typography;
 
@@ -82,8 +82,10 @@ function Footer({ company, links }) {
   );
 }
 
+function Footer() {}
+
 // Setting default values for the props of Footer
-Footer.defaultProps = {
+Footer2.defaultProps = {
   company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
   links: [
     { href: "https://www.creative-tim.com/", name: "Creative Tim" },
@@ -94,7 +96,7 @@ Footer.defaultProps = {
 };
 
 // Typechecking props for the Footer
-Footer.propTypes = {
+Footer2.propTypes = {
   company: PropTypes.objectOf(PropTypes.string),
   links: PropTypes.arrayOf(PropTypes.object),
 };
