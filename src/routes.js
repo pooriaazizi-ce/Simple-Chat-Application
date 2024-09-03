@@ -37,6 +37,7 @@ Coded by www.creative-tim.com
 
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
+import ChatDashboard from "layouts/chatDashborad";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
@@ -49,12 +50,23 @@ import SignUp from "layouts/authentication/sign-up";
 import Icon from "@mui/material/Icon";
 
 const routes = [
+  // Chat Application Components
   {
     type: "collapse",
-    name: "Dashboard",
+    name: "داشبورد",
     key: "dashboard",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
+    component: <ChatDashboard />,
+  },
+
+  // Templates
+  {
+    type: "collapse",
+    name: "Dashboard",
+    key: "dashboard2",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/dashboard2",
     component: <Dashboard />,
   },
   {
@@ -97,6 +109,8 @@ const routes = [
     route: "/profile",
     component: <Profile />,
   },
+
+  // Authentication
   {
     type: "collapse",
     name: "Sign In",
