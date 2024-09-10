@@ -153,12 +153,13 @@ import boxImage from "./chat.png";
 // Images
 import bgImage from "assets/images/bg-sign-up-cover.jpeg";
 import themeRTL from "assets/theme/theme-rtl";
+import { TbMessageChatbotFilled } from "react-icons/tb";
 
 function Cover() {
   return (
     <CoverLayout className={"noto-sans-arabic"}>
       <Card>
-        <MDTypography mt={3} variant="h4" fontWeight="medium" color="black" className={"noto-sans-arabic"}>
+        <MDTypography mt={3} ml={3} variant="h4" fontWeight="medium" color="black" className={"noto-sans-arabic"}>
             ورود به رایچت
           </MDTypography>
           <MDBox textAlign="right">
@@ -172,10 +173,9 @@ function Cover() {
                   textGradient
                   className={"noto-sans-arabic"}
                 >
-                 عضو شوید
               </MDTypography>
-              <MDTypography variant="button" color="black" mr = {2.7} className={"noto-sans-arabic"}>
-                 حساب کاربری ندارید؟{" "}
+              <MDTypography variant="button" color="black" mr = {31} className={"noto-sans-arabic"}>
+                 حساب کاربری ندارید؟
               </MDTypography>
             </MDBox>
         <MDBox pt={4} pb={3} px={3}>
@@ -187,25 +187,6 @@ function Cover() {
               <MDInput type="password" label="رمز عبور"fullWidth />
             </MDBox>
             <MDBox display="flex" alignItems="center" ml={-1}>
-              {/* <Checkbox />
-              <MDTypography
-                variant="button"
-                fontWeight="regular"
-                color="text"
-                sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
-              >
-                &nbsp;&nbsp;I agree the&nbsp;
-              </MDTypography>
-              <MDTypography
-                component="a"
-                href="#"
-                variant="button"
-                fontWeight="bold"
-                color="info"
-                textGradient
-              >
-                Terms and Conditions
-              </MDTypography> */}
             </MDBox>
             <MDBox mt={1}>
               <MDButton variant="gradient" color="purple" mb={5} fullWidth>
