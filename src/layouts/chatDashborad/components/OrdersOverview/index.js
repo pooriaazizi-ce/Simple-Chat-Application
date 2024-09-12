@@ -12,11 +12,11 @@ import TimelineItem from "examples/Timeline/TimelineItem";
 
 function OrdersOverview() {
   return (
-    <Card sx={{width:"100%"}}>
-      <MDBox p={2}>
+    <Card sx={{width:"62rem", height:"18.25rem", justifyContent:"center", alignItems:"center"}}>
+      <MDBox>
         <TimelineItem
           color="white"
-          title="فعلا دیتایی ثبت نشده است. با اولین مکامله تان، نمودار چت ها را"
+          title="فعلا دیتایی ثبت نشده است. با اولین مکامله، نمودار چت ها را مشاهده خواهید کرد"
         />
       </MDBox>
     </Card>

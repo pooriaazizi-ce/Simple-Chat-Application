@@ -21,22 +21,6 @@ function TimelineItem({ color, icon, title, dateTime, description, lastItem }) {
 
   return (
     <MDBox position="relative" mb={0}>
-      <MDBox
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        bgColor={color}
-        color="white"
-        width="2rem"
-        height="2rem"
-        borderRadius="50%"
-        position="relative"
-        top="8%"
-        left="2px"
-        zIndex={2}
-        sx={{ fontSize: ({ typography: { size } }) => size.sm }}
-      >
-      </MDBox>
       <MDBox pt={description ? 0.7 : 0.5} lineHeight={15} maxWidth="30rem">
         <MDTypography variant="button" fontWeight="bold" color={isDark ? "white" : "dark"}>
           {title}
