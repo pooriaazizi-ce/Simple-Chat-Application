@@ -13,14 +13,15 @@ import MDBox from "components/MDBox";
 // Material Dashboard 2 React example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
-import { GiTreeBranch } from "react-icons/gi";
+import { TbMessageChatbotFilled } from "react-icons/tb";
+import message from "./conversation.png"
 
 // Authentication layout components
 // import Footer from "layouts/authentication/components/Footer";
 
 function CoverLayout({ coverHeight, image, children }) {
   return (
-    <PageLayout >
+    <PageLayout>
       <DefaultNavbar
         action={{
           type: "external",
@@ -32,10 +33,10 @@ function CoverLayout({ coverHeight, image, children }) {
         light
       >
       </DefaultNavbar>
+      <img src={message} alt="icon of app" style={{ width: "50px", height: "50px", marginTop: "1.5rem", marginRight: "3rem"}}/>
       <MDBox
         width="calc(100% - 2rem)"
         minHeight={coverHeight}
-
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             image &&

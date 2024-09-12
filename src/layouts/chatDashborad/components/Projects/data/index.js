@@ -103,11 +103,11 @@ export default function data() {
             $3,000
           </MDTypography>
         ),
-        completion: (
-          <MDBox width="8rem" textAlign="left">
-            <MDProgress value={10} color="info" variant="gradient" label={false} />
-          </MDBox>
-        ),
+        // completion: (
+        //   <MDBox width="8rem" textAlign="left">
+        //     <MDProgress value={10} color="info" variant="gradient" label={false} />
+        //   </MDBox>
+        // ),s
       },
       {
         companies: <Company image={logoSlack} name="Fix Platform Errors" />,
@@ -124,11 +124,11 @@ export default function data() {
             Not set
           </MDTypography>
         ),
-        completion: (
-          <MDBox width="8rem" textAlign="left">
-            <MDProgress value={100} color="success" variant="gradient" label={false} />
-          </MDBox>
-        ),
+        // completion: (
+        //   <MDBox width="8rem" textAlign="left">
+        //     <MDProgress value={100} color="success" variant="gradient" label={false} />
+        //   </MDBox>
+        // ),s
       },
       {
         companies: <Company image={logoSpotify} name="Launch our Mobile App" />,
@@ -138,38 +138,38 @@ export default function data() {
               [team4, "Jessica Doe"],
               [team3, "Alexander Smith"],
               [team2, "Romina Hadid"],
-              [team1, "Ryan Tompson"],
+              [team1, "Rya2mn Tompson"],
             ])}
           </MDBox>
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $20,500
+            $20,5600
           </MDTypography>
         ),
-        completion: (
-          <MDBox width="8rem" textAlign="left">
-            <MDProgress value={100} color="success" variant="gradient" label={false} />
-          </MDBox>
-        ),
+        // completion: (
+        //   <MDBox wi dth="8rem" textAlign="left">
+        //     <MDProgress value={100} color="success" variant="gradient" label={false} />
+        //   </MDBox>
+        // ),
       },
       {
         companies: <Company image={logoJira} name="Add the New Pricing Page" />,
         members: (
           <MDBox display="flex" py={1}>
-            {avatars([[team4, "Jessica Doe"]])}
+            {avatars([[team4, "Jeddsinsca Doe"]])}
           </MDBox>
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $500
+            $5001
           </MDTypography>
         ),
-        completion: (
-          <MDBox width="8rem" textAlign="left">
-            <MDProgress value={25} color="info" variant="gradient" label={false} />
-          </MDBox>
-        ),
+        // completion: (
+        //   <MDBox width="8rem" textAlign="left">
+        //     <MDProgress value={25} color="info" variant="gradient" label={false} />
+        //   </MDBox>
+        // ),
       },
       {
         companies: <Company image={logoInvesion} name="Redesign New Online Shop" />,
@@ -186,11 +186,11 @@ export default function data() {
             $2,000
           </MDTypography>
         ),
-        completion: (
-          <MDBox width="8rem" textAlign="left">
-            <MDProgress value={40} color="info" variant="gradient" label={false} />
-          </MDBox>
-        ),
+        // completion: (
+        //   <MDBox width="8rem" textAlign="left">
+        //     <MDProgress value={40} color="info" variant="gradient" label={false} />
+        //   </MDBox>
+        // ),msssss
       },
     ],
   };
